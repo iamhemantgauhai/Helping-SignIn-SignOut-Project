@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This form for Login Sign-up validation" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Sandhya Shakya" />
+    <!-- <meta http-equiv="refresh" content="30"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGNUP</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="login">
+      <form name="form-login" id="sign-up">
+        <h1>SING-UP</h1>
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Username" required />
+
+        <label for="firstName">First Name</label>
+        <input
+          type="firstName"
+          id="firstName"
+          placeholder="FirstName"
+          required
+        />
+
+        <label for="lastName">Last Name</label>
+        <input type="lastName" id="lastName" placeholder="LastName" required />
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" />
+
+        <input id="txtPhone" type="tel"/>
+        <span id="valid-msg" class="hide">✓ Valid</span>
+        <br>
+        <span id="error-msg" class="hide"></span>
+        <br>
+        
+        <label class="add" for="pincode">Address</label>
+        <input
+          type="ship-address"
+          id="shipaddress"
+          name="shipaddress"
+          required
+          autocomplete="off"
+        />
+        <label for="pw">Password</label>
+        <input type="password" id="pw" placeholder="Password" required />
+
+        <ul class="helper-text">
+          <li class="length">Must be at least 8 characters long.</li>
+          <li class="lowercase">Must contain a lowercase letter.</li>
+          <li class="uppercase">Must contain one uppercase letter.</li>
+          <li class="special">Must contain a number or special character.</li>
+        </ul>
+        <input
+          id="rgstr_btn"
+          type="submit"
+          value="Register"
+          onclick="store(event)"
+        />
+        <a href="./login/login.html" target="_blank">Login</a>
+      </form>
+    </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDN9vfYnKn3W09icpohL31TmnDlW9q29I&callback=initAutocomplete&libraries=places&v=weekly"
+      async
+    ></script>
+    <!-- /////// -->
+
+    <link
+      rel="stylesheet"
+      href="https://intl-tel-input.com/node_modules/intl-tel-input/build/css/intlTelInput.css?1638200991544"
+    />
+
+    <!-- <body data-new-gr-c-s-check-loaded="14.1043.0" data-gr-ext-installed=""> -->
+    <!-- <input id="phone" type="tel" />
+      <span id="valid-msg" class="hide">✓ Valid</span>
+      <span id="error-msg" class="hide"></span> -->
+    <!-- Code injected by live-server -->
+    <script src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/intlTelInput.js?1638200991544"></script>
+    <script
+      class="iti-load-utils"
+      async=""
+      src="https://intl-tel-input.com/node_modules/intl-tel-input/build/js/utils.js?1638200991544"
+    ></script>
+    <script src="./login/login.js"></script>
+
+    <!-- ///////// -->
+    <script src="signup.js"></script>
+  </body>
+</html>

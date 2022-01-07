@@ -1,0 +1,46 @@
+<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This form for Login Sign-up validation" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Sandhya Shakya" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div class="login">
+      <form name="form-login" id="login-form">
+        <h1>LOGIN</h1>
+
+        <label for="userName">Email</label>
+        <input type="email" id="userName" placeholder="Username" required />
+
+        <label for="userPw">Password</label>
+        <input type="password" id="userPw" placeholder="Password" required />
+
+        <div id="remember">
+          <input
+            type="checkbox"
+            value="lsRememberMe"
+            id="rememberMe"
+            style="display: inline-block"
+          />
+          <label>Remember me</label>
+        </div>
+
+        <input
+          id="login_btn"
+          type="submit"
+          value="Login"
+          onclick="check(event)"
+        />
+      </form>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
